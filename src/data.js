@@ -122,6 +122,7 @@ export const heroImages = [
 export const texts = {
   ar: {
     nav: {
+      about: 'من نحن',
       services: 'خدماتنا',
       products: 'منتجاتنا',
       process: 'إزاي بنشتغل',
@@ -139,6 +140,18 @@ export const texts = {
       primary: 'اطلب عرض سعر',
       secondary: 'شوف منتجاتنا',
       quoteMessage: 'أهلاً جولدن، عايز عرض سعر لهدايا دعائية لشركتنا.',
+    },
+    about: {
+      eyebrow: 'من نحن',
+      title: 'شريكك في الهدايا اللي بتفضل في الذاكرة',
+      text:
+        'جولدن للتوريدات العمومية متخصصة في الهدايا والمنتجات الدعائية للشركات. بنختار كل منتج بعناية، ونطبع أو نطرّز أو نحفر عليه لوجو براندك بجودة تليق باسمك — من القلم البسيط لحد الهدايا الفاخرة — وبنلتزم بالميعاد في كل طلب.',
+      // value: رقم بيتعد لحد ما يوصله. من غير value بيظهر أيقونة بدل الرقم
+      stats: [
+        { value: 40, prefix: '+', label: 'منتج' },
+        { value: 4, label: 'طرق تنفيذ' },
+        { icon: 'clock', label: 'تسليم في الميعاد' },
+      ],
     },
     services: {
       eyebrow: 'خدماتنا',
@@ -188,6 +201,7 @@ export const texts = {
 
   en: {
     nav: {
+      about: 'About',
       services: 'Services',
       products: 'Products',
       process: 'How We Work',
@@ -205,6 +219,17 @@ export const texts = {
       primary: 'Request a Quote',
       secondary: 'View Products',
       quoteMessage: 'Hello Golden, I would like a quote for branded promotional gifts.',
+    },
+    about: {
+      eyebrow: 'About Us',
+      title: 'Your Partner for Gifts People Remember',
+      text:
+        'Golden General Supplies specializes in corporate gifts and promotional products. We carefully select every item and print, embroider or laser-engrave your logo with quality worthy of your name — from everyday pens to premium gifts — and we deliver on time, every time.',
+      stats: [
+        { value: 40, prefix: '+', label: 'Products' },
+        { value: 4, label: 'Branding Methods' },
+        { icon: 'clock', label: 'On-Time Delivery' },
+      ],
     },
     services: {
       eyebrow: 'Services',

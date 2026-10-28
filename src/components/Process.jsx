@@ -15,20 +15,20 @@ export default function Process() {
   const drawn = reduce ? 1 : progress
 
   return (
-    <section id="process" className="bg-ivory py-24 md:py-32">
+    <section id="process" className="bg-charcoal py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <SectionHeading eyebrow={t.process.eyebrow} title={t.process.title} />
+        <SectionHeading dark eyebrow={t.process.eyebrow} title={t.process.title} />
 
         <div ref={ref} className="relative mt-16 md:mt-20">
           {/* الخط الأفقي — كمبيوتر */}
-          <div className="absolute inset-x-[10%] top-8 hidden h-px bg-charcoal/10 md:block">
+          <div className="absolute inset-x-[10%] top-8 hidden h-px bg-ivory/10 md:block">
             <motion.div
               className="h-full w-full bg-gradient-to-r from-gold-light to-gold"
               style={{ scaleX: drawn, transformOrigin: isRTL ? 'right' : 'left' }}
             />
           </div>
           {/* الخط الرأسي — موبايل */}
-          <div className="absolute start-8 top-8 bottom-8 w-px bg-charcoal/10 md:hidden">
+          <div className="absolute start-8 top-8 bottom-8 w-px bg-ivory/10 md:hidden">
             <motion.div className="h-full w-full bg-gradient-to-b from-gold-light to-gold" style={{ scaleY: drawn, transformOrigin: 'top' }} />
           </div>
 
@@ -37,15 +37,15 @@ export default function Process() {
               const Icon = icons[i]
               return (
                 <motion.li key={i} variants={item} className="flex items-start gap-6 md:flex-col md:items-center md:gap-0 md:text-center">
-                  <span className="relative flex size-16 shrink-0 items-center justify-center rounded-full border border-gold/40 bg-ivory text-gold shadow-soft">
+                  <span className="relative flex size-16 shrink-0 items-center justify-center rounded-full border border-gold/40 bg-charcoal text-gold shadow-soft-dark">
                     <Icon strokeWidth={1.25} className="size-6" />
-                    <span className="absolute -top-1 -end-1 flex size-6 items-center justify-center rounded-full bg-charcoal font-poppins text-[0.7rem] font-semibold text-gold-light">
+                    <span className="absolute -top-1 -end-1 flex size-6 items-center justify-center rounded-full bg-gold font-poppins text-[0.7rem] font-semibold text-charcoal">
                       {i + 1}
                     </span>
                   </span>
                   <div className="pt-2 md:pt-7">
-                    <h3 className="text-xl font-bold text-charcoal">{s.title}</h3>
-                    <p className="mt-2 text-[0.95rem] leading-relaxed text-muted md:mx-auto md:max-w-[13rem]">{s.text}</p>
+                    <h3 className="text-xl font-bold text-ivory">{s.title}</h3>
+                    <p className="mt-2 text-[0.95rem] leading-relaxed text-ivory/60 md:mx-auto md:max-w-[13rem]">{s.text}</p>
                   </div>
                 </motion.li>
               )

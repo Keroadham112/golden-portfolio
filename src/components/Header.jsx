@@ -5,7 +5,7 @@ import { company, whatsappLink } from '../data'
 import { useLang } from '../LanguageContext'
 import WhatsAppIcon from './WhatsAppIcon'
 
-const sections = ['services', 'products', 'process', 'contact']
+const sections = ['about', 'services', 'products', 'process', 'contact']
 
 export default function Header() {
   const { t, toggle, lang } = useLang()

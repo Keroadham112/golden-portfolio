@@ -18,9 +18,9 @@ export default function Products() {
   )
 
   return (
-    <section id="products" className="bg-charcoal py-24 md:py-32">
+    <section id="products" className="bg-ivory py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <SectionHeading dark eyebrow={t.products.eyebrow} title={t.products.title} subtitle={t.products.subtitle} />
+        <SectionHeading eyebrow={t.products.eyebrow} title={t.products.title} subtitle={t.products.subtitle} />
 
         <Reveal className="mt-12">
           <motion.div variants={item}>
@@ -34,7 +34,7 @@ export default function Products() {
                       onClick={() => setActive(c.id)}
                       aria-pressed={isActive}
                       className={`relative shrink-0 rounded-full px-5 py-2.5 text-sm transition-colors duration-300 ${
-                        isActive ? 'font-semibold text-charcoal' : 'text-ivory/70 hover:text-ivory'
+                        isActive ? 'font-semibold text-charcoal' : 'text-charcoal/65 hover:text-charcoal'
                       }`}
                     >
                       {isActive ? (
@@ -44,7 +44,7 @@ export default function Products() {
                           transition={{ type: 'spring', stiffness: 400, damping: 34 }}
                         />
                       ) : (
-                        <span className="absolute inset-0 rounded-full border border-ivory/10" />
+                        <span className="absolute inset-0 rounded-full border border-charcoal/10" />
                       )}
                       <span className="relative">{c[lang]}</span>
                     </button>
@@ -71,7 +71,7 @@ export default function Products() {
                   className="group block w-full text-start focus-visible:outline-none"
                   aria-label={`${t.products.view}: ${p[lang]}`}
                 >
-                  <div className="relative aspect-square overflow-hidden rounded-2xl bg-white shadow-soft-dark ring-1 ring-ivory/5 group-focus-visible:ring-2 group-focus-visible:ring-gold">
+                  <div className="relative aspect-square overflow-hidden rounded-2xl bg-white shadow-soft ring-1 ring-charcoal/5 group-focus-visible:ring-2 group-focus-visible:ring-gold">
                     <img
                       src={p.image}
                       alt={p[lang]}
@@ -90,7 +90,7 @@ export default function Products() {
                       </span>
                     </div>
                   </div>
-                  <h3 className="mt-4 text-sm leading-snug font-normal text-ivory/85 transition-colors group-hover:text-gold-light sm:text-base">
+                  <h3 className="mt-4 text-sm leading-snug font-normal text-charcoal/85 transition-colors group-hover:text-gold sm:text-base">
                     {p[lang]}
                   </h3>
                 </button>

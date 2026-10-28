@@ -9,7 +9,7 @@ const labels = {
 }
 
 // بيظهر بس لو فيه لينكات متسجلة في social جوه data.js
-export default function SocialLinks({ className = '' }) {
+export default function SocialLinks({ light = false, className = '' }) {
   const links = Object.entries(social).filter(([, url]) => url)
   if (!links.length) return null
   return (
@@ -20,7 +20,9 @@ export default function SocialLinks({ className = '' }) {
           href={url}
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-full border border-ivory/15 px-4 py-2 font-poppins text-sm text-ivory/75 transition-colors hover:border-gold hover:text-gold-light"
+          className={`rounded-full border px-4 py-2 font-poppins text-sm transition-colors hover:border-gold ${
+            light ? 'border-charcoal/15 text-charcoal/75 hover:text-gold' : 'border-ivory/15 text-ivory/75 hover:text-gold-light'
+          }`}
         >
           {labels[key] ?? key}
         </a>

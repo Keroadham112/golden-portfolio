@@ -4,6 +4,7 @@ import { LanguageProvider } from './LanguageContext'
 import Loader from './components/Loader'
 import Header from './components/Header'
 import Hero from './components/Hero'
+import About from './components/About'
 import Services from './components/Services'
 import Products from './components/Products'
 import Process from './components/Process'
@@ -27,6 +28,7 @@ export default function App() {
         <Header />
         <main>
           <Hero ready={!loading} />
+          <About />
           <Services />
           <Products />
           <Process />
