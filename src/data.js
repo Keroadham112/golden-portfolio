@@ -8,15 +8,15 @@ export const company = {
   name: { ar: 'جولدن للتوريدات العمومية', en: 'Golden General Supplies' },
   logoText: 'Golden',
   address: {
-    ar: '82 ش وادي النيل، العجوزة، الجيزة',
-    en: '82 Wadi El Nil St., Agouza, Giza, Egypt',
+    ar: '25 ش السودان الرئيسي، الدور الأرضي، المهندسين، الجيزة',
+    en: '25 Sudan St., Ground Floor, Mohandessin, Giza, Egypt',
   },
   // رقم الواتساب بالصيغة الدولية من غير + (مستخدم في لينكات wa.me)
   whatsapp: '201270110723',
   phone: '01270110723',
   email: 'goldensupplies2027@gmail.com',
   // اللي بيتكتب في خانة البحث في جوجل مابس للخريطة المدمجة
-  mapQuery: '82 Wadi El Nil St, Agouza, Giza, Egypt',
+  mapQuery: '25 Sudan St, Mohandessin, Giza, Egypt',
 }
 
 // ---------- السوشيال ميديا ----------
